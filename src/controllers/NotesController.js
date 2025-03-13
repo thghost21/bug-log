@@ -15,6 +15,7 @@ export class NotesController extends BaseController {
       const userInfo = request.userInfo
       noteData.creatorId = userInfo.id
       const note = await notesService.createNote(noteData)
+      response.send(note)
     } catch (error) {
       next(error)
 
