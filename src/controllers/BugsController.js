@@ -63,6 +63,6 @@ export class BugsController extends BaseController {
     }
   }
 
-
+  // Hello
 
 }
