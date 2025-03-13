@@ -55,7 +55,7 @@ export class BugsController extends BaseController {
   }
   async deleteBug(request, response, next) {
     try {
-      // Heyo
+
       const bugId = request.params.bugId
       const deletedBug = await bugsService.deleteBug(bugId)
       response.send(deletedBug)
@@ -64,6 +64,6 @@ export class BugsController extends BaseController {
     }
   }
 
-  // Hello
+
 
 }
